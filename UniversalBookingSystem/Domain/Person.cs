@@ -15,17 +15,29 @@
             if (string.IsNullOrEmpty(name))
                 throw new ArgumentException("Missing name");
 
-            if (string.IsNullOrEmpty(email))
-                throw new ArgumentException("Email Missing");
-
-            if (phonenumber.Length < 5)
-                throw new ArgumentException("PhoneNumber must be longer");
 
             Id = id;
             Name = name;
             Email = email;
             Phonenumber = phonenumber;
         }
+
+        public void ChangeName(string newName)
+        {
+            Name = newName;
+        }
+
+        public void ChangeEmail(string newEmail)
+        {
+            Email = newEmail;
+        }
+
+        public void ChangePhone(string newPhone)
+        {
+            Phonenumber = newPhone;
+        }
+
+
     }
 }
 
