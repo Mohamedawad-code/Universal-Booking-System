@@ -1,4 +1,6 @@
-﻿namespace UniversalBookingSystem.Domain
+﻿using System;
+
+namespace UniversalBookingSystem.Domain
 {
     public class Person
     {
@@ -39,6 +41,11 @@
 
 
     }
+
+  
+ 
+
+
 }
 
 
