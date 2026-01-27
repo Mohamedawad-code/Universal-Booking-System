@@ -5,7 +5,7 @@
     {
         public List<Person> PeopleList = new List<Person>();
 
-        public string meetingNote { get; private set; }
+        public string MeetingNote { get; private set; }
         public DateTime Date { get; private set; }
 
         public Meeting (string meetingnote, DateTime date)
@@ -13,11 +13,11 @@
 
             Validate(date);
 
-            meetingNote = meetingnote;
+            MeetingNote = meetingnote;
             Date = date;
         }
 
-        public void reschdule(DateTime newDate)
+        public void Rescehdule(DateTime newDate)
         {
             Validate(newDate);
             Date = newDate;
